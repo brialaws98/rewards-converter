@@ -1,18 +1,19 @@
+
 import java.util.Scanner;
-    // This code converts a cash value into airline miles
+// This code converts a cash value into airline miles
 public class RewardsConverter {
     public static void main(String[] args) {
-            /*
-                * Will allow user to enter information.
-                * Like a machine that listens to what the user says
-             */
+        /*
+         * Will allow user to enter information.
+         * Like a machine that listens to what the user says
+         */
         var scanner = new Scanner(System.in);
         System.out.println("Welcome to the Credit Card Rewards Converter!");
         System.out.println("Please enter a cash value to convert to airline miles: ");
-            /*
-                * The program is listening to what the user says or types
-                * Store the information for later use
-            */
+        /*
+         * The program is listening to what the user says or types
+         * Store the information for later use
+         */
         var input_value = scanner.nextLine();
         double cashValue;
         try {
@@ -26,7 +27,7 @@ public class RewardsConverter {
                 * Program doing some calculations to figure out the
                     miles the number is worth
             */
-        var rewardsValue = new RewardValue(cashValue);
-        System.out.println("$" + input_value + " is worth " + rewardsValue.getMilesValue() + " miles");
+        var RewardsValue = new RewardValue(cashValue);
+        System.out.println("$" + input_value + " is worth " + RewardsValue.getMilesValue() + " miles");
     }
 }
