@@ -10,10 +10,12 @@ public class RewardValue {
         this.cashValue = convertToCash(milesValue);
     }
 
+    // Convert Cash to Miles
     private static int convertToMiles(double cashValue) {
         return (int) (cashValue / MILES_TO_CASH_CONVERSION_RATE);
     }
 
+    // Convert Miles to Cash
     private static double convertToCash(int milesValue) {
         return milesValue * MILES_TO_CASH_CONVERSION_RATE;
     }
@@ -22,6 +24,7 @@ public class RewardValue {
         return cashValue;
     }
 
+    // Calls ConvertToMiles function
     public int getMilesValue() {
         return convertToMiles(this.cashValue);
     }
